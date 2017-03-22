@@ -1,0 +1,5 @@
+(define (deep-reverse tree)
+    (if (pair? tree)
+        (append (deep-reverse (cdr tree))
+                (list (deep-reverse (car tree))))
+        tree))
