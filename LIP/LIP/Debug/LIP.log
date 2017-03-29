@@ -1,0 +1,21 @@
+﻿  Token.cpp
+  Parser.cpp
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(158): warning C4018: “>”: 有符号/无符号不匹配
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(220): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(235): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(269): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(281): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(295): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(319): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(331): warning C4101: “e”: 未引用的局部变量
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\parser.cpp(407): warning C4101: “e”: 未引用的局部变量
+  main.cpp
+  Lexer.cpp
+  AST.cpp
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\ast.cpp(40): warning C4018: “<”: 有符号/无符号不匹配
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\ast.cpp(157): warning C4018: “<”: 有符号/无符号不匹配
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\ast.cpp(237): warning C4018: “<”: 有符号/无符号不匹配
+d:\code\book\languageimplementationpatterns\my_code\lip\lip\ast.cpp(300): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  LIP.vcxproj -> D:\code\BOOK\LanguageImplementationPatterns\my_code\LIP\Debug\LIP.exe
+  LIP.vcxproj -> D:\code\BOOK\LanguageImplementationPatterns\my_code\LIP\Debug\LIP.pdb (Partial PDB)

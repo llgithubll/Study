@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LookaheadLexer" Collapsed="true">
+    <Position X="8.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Lexer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListLexer" Collapsed="true">
+    <Position X="8.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAQAAAAAAAAAQgAAAAAAAAAQAAAAACAAA=</HashCode>
+      <FileName>Lexer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lexer" Collapsed="true">
+    <Position X="8.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAIAAAAAQAAAAAAAAAAAAABAABCAAEAAAAACAAI=</HashCode>
+      <FileName>Lexer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParserLLk" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAgAAAgAAACAAAAAAAAAAAAAAAAAABAAgEAAAAAAIAI=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParserLL1" Collapsed="true">
+    <Position X="3.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAIAI=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListParserLL1" Collapsed="true">
+    <Position X="3.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAABAAAAAAAAAIAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LookaheadParserLLk" Collapsed="true">
+    <Position X="0.5" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAABAAAABAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Token" Collapsed="true">
+    <Position X="11.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgBAAAAAABAAAIAAAgAAABAAA=</HashCode>
+      <FileName>Token.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Exception" Collapsed="true">
+    <Position X="22" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Utility.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NaiveParserBacktrack" Collapsed="true">
+    <Position X="8.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAEAFAAAAAAAAAIAAAAAgAAAAAwAAAAAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BacktrackLexer" Collapsed="true">
+    <Position X="8.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lexer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MemoizeParserBacktrack" Collapsed="true">
+    <Position X="8.5" Y="7.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAACAAAAAAAAAAAAAEABAAQRAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvancedParserBacktrack" Collapsed="true">
+    <Position X="8.5" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAFAAAAAAI=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParserBacktrack" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAgAAAgAAICIAAAAAAAAAAAIAAAAABAAAkgAAAABgAI=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AddNode" Collapsed="true">
+    <Position X="0.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AST" Collapsed="true">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAgAAAAQCABAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExprNode" Collapsed="true">
+    <Position X="3" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IntNode" Collapsed="true">
+    <Position X="3" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VectorNode" Collapsed="true">
+    <Position X="5.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeteroAddNode" Collapsed="true">
+    <Position X="0.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAIAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeteroAST" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeteroExprNode" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeteroIntNode" Collapsed="true">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeteroVectorNode" Collapsed="true">
+    <Position X="5.25" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABACAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMAddNode" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMAssignNode" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAACAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMAST" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAAAAQAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMDotProductNode" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAgAAAAAgAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMExprNode" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMIntNode" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMMulNode" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAIAAAAAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMPrintNode" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAACAACAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMStatListNode" Collapsed="true">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMStatNode" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMToken" Collapsed="true">
+    <Position X="11.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Token.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMVarNode" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VMVectorNode" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AST.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

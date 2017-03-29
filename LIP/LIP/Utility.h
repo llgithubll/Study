@@ -1,0 +1,13 @@
+#pragma once
+#include <string>
+
+///////////////////////////////////////////////////////////////////////////////
+//////						  Exception								     //////
+///////////////////////////////////////////////////////////////////////////////
+class Exception {
+public:
+	std::string context;
+	std::string error;
+	Exception(const std::string& _context, const std::string& _error)
+		:context(_context), error(_error) {}
+};
