@@ -1,10 +1,10 @@
 ## Study
 
 ### LIP
-(Language Implementation patterns)
+(Language Implementation Patterns)
 
 ### ML
-(Machine Learning)
+([Coursera Machine Learning](https://www.coursera.org/learn/machine-learning/home/welcome))
 
 ### SICP
 (Structure and Interpretation of Computer Programs)
