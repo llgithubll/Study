@@ -1,10 +1,13 @@
 ## Study
 
+### Algorithms
+[Coursera Algorithms](https://www.coursera.org/learn/algorithms-part1/home/welcome)
+
 ### LIP
-(Language Implementation Patterns)
+Language Implementation Patterns
 
 ### ML
-([Coursera Machine Learning](https://www.coursera.org/learn/machine-learning/home/welcome))
+[Coursera Machine Learning](https://www.coursera.org/learn/machine-learning/home/welcome)
 
 ### SICP
-(Structure and Interpretation of Computer Programs)
+Structure and Interpretation of Computer Programs
