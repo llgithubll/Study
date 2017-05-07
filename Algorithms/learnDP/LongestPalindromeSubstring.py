@@ -1,7 +1,7 @@
 def brute_force(s):
     """Algorithm: brute force
     （对每个子串判断是否为回文串，长度为n的字符串，有n^2个子串，平均子串长度n/2）
-    Aux Space: O(1)
+    Aux Space: θ(1)
     Time: O(n^3)"""
     def is_pal(substr):
         n = len(substr)
@@ -29,10 +29,10 @@ def brute_force(s):
 def dp(s):
     """Algorithm: dynamic programming
     （当子串s[i+1, j-1]是回文串，且s[i] == s[j]，则s[i, j]也是回文串，且len[i, j] == len[i+1, j-1]+2）
-    Aux Space: O(n^2)
-    Time: O(n^2)"""
+    Aux Space: θ(n^2)
+    Time: θ(n^2)"""
     n = len(s)
-    is_pal = [[False] * n] * n
+    is_pal = [[False] * n for i in range(n)]
     max_len = 0
 
     for end in range(n):
@@ -49,7 +49,7 @@ def center_expand(s):
     """Algorithm: center expand
     （以所有字符和字符间的间隙作为回文串的对称轴，同时进行左右扩展，遇到不同字符或边界停止
     长度为n的字符串总共有2n-1个对称轴，每个位置平均要进行n/4次字符比较）
-    Aux Space: O(1)
+    Aux Space: θ(1)
     Time: O(n^2)"""
     n = len(s)
     max_len = 0
@@ -83,7 +83,7 @@ def center_expand(s):
 
 def manacher(s):
     """Algorithm: manacher
-    Aux Space: O(n)
+    Aux Space: θ(n)
     Time: O(n)"""
     #预处理
     s='#'+'#'.join(s)+'#'
