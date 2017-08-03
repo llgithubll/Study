@@ -1,49 +1,88 @@
-from random import choice
-from numpy import array, dot, random, arange
+import numpy as np
 import matplotlib.pyplot as plt
+import random    
 
 
-def draw(w, cnt, iter_num, train_data):
-    pos_x1 = []
-    pos_x2 = []
-    neg_x1 = []
-    neg_x2 = []
-    for x, y in train_data:
-        if y < 0:
-            neg_x1.append(x[0])
-            neg_x2.append(x[1])
-        else:
-            pos_x1.append(x[0])
-            pos_x2.append(x[1])
+
+def generate_linear_seperate_points(n):
+    x1, y1, x2, y2 = [random.uniform(-1, 1) for i in range(4)]
+    W = np.array([y1*x2-y2*x1, y2-y1, x1-x2])
+    data_set = []
     
-    x1 = arange(-5, 5, 0.1)
-    x2 = [-(w[0] * x + w[2]) / w[1] for x in x1]
-    plt.plot(x1, x2, color=str(cnt/iter_num))
-    plt.plot(pos_x1, pos_x2, 'bo', neg_x1, neg_x2, 'rx')
-    plt.ylim(0, 6)
+    for i in range(n):
+        x1, x2 = [random.uniform(-1, 1) for i in range(2)]
+        X = np.array([1, x1, x2])
+        y = int(np.sign(W.T.dot(X)))
+        data_set.append((X, y))
+    return data_set
 
 
-sign = lambda x : -1 if x < 0 else 1
+class Perceptron():
+    """
+    w1*x1 + w2*x2 + b = 0
+    W = [b, w1, w2]
+    X = [1, x1, x2]
 
-train_data = [
-    (array([3, 3, 1]), 1),
-    (array([4, 3, 1]), 1),
-    (array([1, 1, 1]), -1)
-]
+    data_set = [
+        [(X, 1)],
+        [(X, -1)],
+        etc...
+    ]
 
-w = random.rand(3)
-errors = []
-eta = 0.2
-iter_num = 100
-
-
-for i in range(iter_num):
-    x, y = choice(train_data)
-    if y * dot(w, x) <= 0:
-        w = w + eta * y * x
-    draw(w, i, iter_num, train_data)
-plt.show()
+    f(X) = sign(W.dot(X))
+    """
+    def __init__(self, data_set, eta=1, iter_num=10):
+        self.W = np.zeros(3)
+        self.data_set = data_set
+        self.eta = eta
+        self.iter_num = iter_num
+        self.fig = plt.figure()# plt.figure(figsize=(5, 5*iter_num))
 
 
-for x, y in train_data:
-    print("x:{}, y:{}, predict:{}".format(x[:2], y, sign(dot(w, x))))
+    def choose_wrong_point(self, W):
+        for X, y in self.data_set:
+            if int(np.sign(W.T.dot(X))) != y:
+                return (X, y)
+        else:
+            print('success classify in {} tries'.format(str(self.iter_num)))
+            return None
+
+
+    def PLA(self, draw=False):
+        W = np.zeros(3)
+        it = 1
+
+        if draw:
+            pos_x, pos_y, neg_x, neg_y = [[] for i in range(4)]
+            for X, y in self.data_set:
+                if y < 0:
+                    neg_x.append(X[1])
+                    neg_y.append(X[2])
+                else:
+                    pos_x.append(X[1])
+                    pos_y.append(X[2])
+            
+        while True:
+            point = self.choose_wrong_point(W)
+            if point is None or it >= self.iter_num:
+                break
+
+            X, y = point
+            W += self.eta * y * X
+
+            if draw:
+                x_coords = np.linspace(-1, 1)
+                a, b = -W[1]/W[2], -W[0]/W[2]
+                self.fig.add_subplot(self.iter_num, 1, it, xlim=[-1, 1], ylim=[-1, 1])
+                plt.plot(x_coords, a*x_coords+b, pos_x, pos_y, 'go', neg_x, neg_y, 'rx')
+
+            it += 1
+
+        self.W = W
+        if draw:
+            plt.show()
+
+
+if __name__ == '__main__':
+    p = Perceptron(generate_linear_seperate_points(10))
+    p.PLA(draw=True)
