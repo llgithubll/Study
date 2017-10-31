@@ -1,0 +1,15 @@
+body {
+    color:white;
+    background-color:black;
+}
+
+#purchases {
+    border: 1px solid white;
+    background-color: #333;
+    color: #ccc;
+    padding: 2em;
+}
+
+#purchases li {
+    font-weight: bold;
+}
